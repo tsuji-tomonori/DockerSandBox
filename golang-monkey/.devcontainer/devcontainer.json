@@ -1,0 +1,9 @@
+{
+	"name": "monkey", // コンテナ表示名
+	"dockerComposeFile": [
+		"../docker-compose.yml" // Docker Composeのファイルパス
+	],
+	"service": "dev", // Docker Composeの接続サービス名
+	"remoteUser": "dev-user", // デフォルトユーザをrootから切り替える
+	"workspaceFolder": "/home/dev-user" // Workspaceのフォルダを指定
+}

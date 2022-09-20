@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  monkey:
+    image: golang:1.19-alpine
+    tty: true
+    volumes:
+      - type: bind
+        source: ./src
+        target: /usr/src
