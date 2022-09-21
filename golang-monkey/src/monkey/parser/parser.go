@@ -32,7 +32,7 @@ func (p *Parser) ParserProgram() *ast.Program {
 	program := &ast.Program{}
 	program.Statement = []ast.Statement{}
 
-	for p.curToken.Type != token.EOF {
+	for !p.curTokenIs(token.EOF) {
 		stmt := p.parseStatement()
 		if stmt != nil {
 			program.Statement = append(program.Statement, stmt)
