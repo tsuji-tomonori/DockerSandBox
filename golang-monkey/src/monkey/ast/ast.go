@@ -8,13 +8,12 @@ type Node interface {
 
 // 文: 値を生成しない
 type Statement interface {
-	// 文: 値を生成しない
 	Node
 	statementNode()
 }
 
+// 式: 値を生成する
 type Expression interface {
-	// 式: 値を生成する
 	Node
 	expressionNode()
 }
