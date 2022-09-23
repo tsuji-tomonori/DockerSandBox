@@ -1,3 +1,5 @@
+// 抽象構文木(Abstract syntax tree)
+// 構文解析器の出力
 package ast
 
 import "monkey/token"

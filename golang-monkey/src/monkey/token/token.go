@@ -1,3 +1,4 @@
+// トークンを定義する
 package token
 
 type TokenType string

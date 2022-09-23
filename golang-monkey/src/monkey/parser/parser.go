@@ -1,3 +1,5 @@
+// 構文解析器
+// トークン列 -> 抽象構文木(AST)
 package parser
 
 import (
