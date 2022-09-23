@@ -212,6 +212,7 @@ func (p *Parser) parserIntegerLiteral() ast.Expression {
 	return lit
 }
 
+// 前置演算子式の構文解析
 func (p *Parser) parserPrefixExpression() ast.Expression {
 	expression := &ast.PrefixExpression{
 		Token:    p.curToken,
